@@ -1,3 +1,17 @@
+"""
+AI DOCUMENTATION
+----------------
+AI Tools Used: Google Gemini
+
+Key Prompts Provided:
+1. "calculating the flow rate of an undersaturated volatile oil using Darcy's Law"
+2. "radial flow"
+3. "a full, fixed baseline curve (for example, plotting Pressure Differential from 0 up to a hardcoded maximum of 5,000 psi) and dynamically highlight the user's specific slider input"
+
+Manual Verification/Fix:
+The most important element I had to manually verify was the correct application of the standard oilfield unit conversion factor (7.08e-3) within the steady-state radial flow equation, as well as confirming the physical boundary logic in the error handling to ensure unphysical negative values wouldn't bypass the warning state.
+"""
+
 import streamlit as st
 import pandas as pd
 import numpy as np
